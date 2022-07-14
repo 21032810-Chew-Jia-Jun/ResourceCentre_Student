@@ -144,7 +144,7 @@ public class ResourceCentreTest {
 		assertTrue("Test if an available item is ok to loan?", ok);
 		assertFalse(camcorderList.get(0).getIsAvailable());
 		assertEquals(camcorderList.get(0).getDueDate(),"8-8-2020");
-		
+	
 				
 		//error condition
 		ok = ResourceCentre.doLoanCamcorder(camcorderList, "CC0011", "8-8-2020" );
