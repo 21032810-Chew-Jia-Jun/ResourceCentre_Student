@@ -179,13 +179,26 @@ public class ResourceCentre {
 		camcorderList.add(cc);
 		
 	}
+<<<<<<< HEAD
 	public static Chromebook inputChromebook() {
+=======
+	
+	public static Chromebook inputChromebook() {	
+>>>>>>> branch 'master' of https://github.com/21032810-Chew-Jia-Jun/ResourceCentre_Student.git
 		// write your code here
 		String tag = Helper.readString("Enter asset tag > ");
 		String description = Helper.readString("Enter description > ");
+<<<<<<< HEAD
 		String zoom = Helper.readString("Enter optical zoom > ");
+=======
+		String OS = Helper.readString("Enter operating system > ");
+>>>>>>> branch 'master' of https://github.com/21032810-Chew-Jia-Jun/ResourceCentre_Student.git
 
+<<<<<<< HEAD
 		Chromebook cb = new Chromebook(tag, description, zoom);
+=======
+		Chromebook cb= new Chromebook(tag, description, OS);
+>>>>>>> branch 'master' of https://github.com/21032810-Chew-Jia-Jun/ResourceCentre_Student.git
 		return cb;
 		
 	}	
@@ -240,7 +253,11 @@ public class ResourceCentre {
 				
 			}
 		}
+<<<<<<< HEAD
 		return isLoaned;
+=======
+		return true;
+>>>>>>> branch 'master' of https://github.com/21032810-Chew-Jia-Jun/ResourceCentre_Student.git
 	}
 	public static void loanChromebook(ArrayList<Chromebook> chromebookList) {
 		// write your code here
@@ -251,9 +268,15 @@ public class ResourceCentre {
 		if (isLoaned == false) {
 			System.out.println("Invalid asset tag");
 		} else {
+<<<<<<< HEAD
 			System.out.println("Chromebook " + tag + " loaned out");
 		}		
+=======
+			System.out.println("Camcorder " + tag + " loaned out");
+		}
+>>>>>>> branch 'master' of https://github.com/21032810-Chew-Jia-Jun/ResourceCentre_Student.git
 	}
+	
 	
 	//================================= Option 4 Return an item (CRUD - Update)=================================
 	public static boolean doReturnCamcorder(ArrayList<Camcorder> camcorderList,String tag) {
